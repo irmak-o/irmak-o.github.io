@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>OAuth callback</title>
+<script>
+  // This page stores and sends nothing. If a provider appended anything to the
+  // URL, remove it from the address bar so it does not linger in history.
+  if (location.search || location.hash) history.replaceState(null, "", location.pathname);
+</script>
+</head>
+<body style="font-family:system-ui,sans-serif;max-width:40rem;margin:4rem auto;padding:0 1rem">
+<h1>OAuth callback</h1>
+<p>This is the registered redirect URL for the <a href="https://github.com/irmak-o/garanti-mcp-server">Garanti MCP Server</a> application. Nothing is stored or forwarded here. You can close this tab.</p>
+<p lang="tr">Bu sayfa Garanti MCP Server uygulamasinin kayitli yonlendirme adresidir. Burada hicbir sey saklanmaz veya iletilmez. Sekmeyi kapatabilirsiniz.</p>
+</body>
+</html>
